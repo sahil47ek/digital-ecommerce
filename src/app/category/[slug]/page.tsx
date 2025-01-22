@@ -5,7 +5,17 @@ import { use } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Code, Palette, BookOpen, Camera, Music, ShoppingBag, Star, Filter, SlidersHorizontal } from 'lucide-react';
+import { 
+  HiQrCode,
+  HiPaintBrush,
+  HiBookOpen as BookOpen,
+  HiCamera as Camera,
+  HiMusicalNote as Music,
+  HiShoppingBag as ShoppingBag,
+  HiStar as Star,
+  HiFunnel as Filter,
+  HiAdjustmentsHorizontal as SlidersHorizontal 
+} from 'react-icons/hi2';
 import CustomSelect from '../../components/CustomSelect';
 import Hero from '../../components/Hero';
 
@@ -30,14 +40,14 @@ type CategoryConfig = {
 
 const CATEGORY_CONFIG: Record<string, CategoryConfig> = {
   development: {
-    icon: Code,
+    icon: HiQrCode,
     title: "Development",
     description: "Web, mobile, and software development resources",
     color: "bg-blue-500",
     heroImage: "/images/projects/e-learning.jpg"
   },
   design: {
-    icon: Palette,
+    icon: HiPaintBrush,
     title: "Design",
     description: "UI kits, templates, and graphics",
     color: "bg-purple-500",

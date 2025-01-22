@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ShoppingBag, Shield, Zap, Users, Clock, Star } from 'lucide-react';
+import { HiArrowRight, HiShoppingBag, HiShieldCheck, HiUsers, HiClock, HiStar } from 'react-icons/hi2';
 
 const TRENDING_PRODUCTS = [
   {
@@ -49,32 +49,27 @@ const TESTIMONIALS = [
 
 const FEATURES = [
   {
-    icon: ShoppingBag,
+    icon: HiShoppingBag,
     title: "Curated Products",
     description: "Hand-picked, quality-assured digital products from top creators"
   },
   {
-    icon: Shield,
+    icon: HiShieldCheck,
     title: "Secure Transactions",
     description: "Safe and encrypted payments with money-back guarantee"
   },
   {
-    icon: Zap,
-    title: "Instant Delivery",
-    description: "Immediate access to your purchased digital products"
-  },
-  {
-    icon: Users,
+    icon: HiUsers,
     title: "Community Support",
     description: "Active community of creators and users for support"
   },
   {
-    icon: Clock,
+    icon: HiClock,
     title: "Regular Updates",
     description: "Free updates and ongoing support for all products"
   },
   {
-    icon: Star,
+    icon: HiStar,
     title: "Premium Quality",
     description: "Top-rated products meeting highest quality standards"
   }
@@ -109,7 +104,7 @@ export default function Home() {
                   className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                 >
                   Explore Products
-                  <ArrowRight className="w-5 h-5" />
+                  <HiArrowRight className="w-5 h-5" />
                 </Link>
                 <Link
                   href="/about"
@@ -187,7 +182,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 text-primary hover:text-primary-dark transition-colors animate-fadeIn"
             >
               View All
-              <ArrowRight className="w-5 h-5" />
+              <HiArrowRight className="w-5 h-5" />
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -293,7 +288,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Create Account
-              <ArrowRight className="w-5 h-5" />
+              <HiArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href="/explore"

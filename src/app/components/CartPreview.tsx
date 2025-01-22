@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ShoppingCart } from 'lucide-react';
+import { HiShoppingCart } from 'react-icons/hi2';
 import { useCart } from '../providers/CartProvider';
 
 export default function CartPreview() {
@@ -18,7 +18,7 @@ export default function CartPreview() {
     >
       {/* Cart Icon with Badge */}
       <button className="relative p-2 hover:bg-gray-100 rounded-full transition-colors">
-        <ShoppingCart className="w-6 h-6 text-black" />
+        <HiShoppingCart className="w-6 h-6 text-black" />
         {totalItems > 0 && (
           <span className="absolute -top-1 -right-1 bg-primary text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
             {totalItems}

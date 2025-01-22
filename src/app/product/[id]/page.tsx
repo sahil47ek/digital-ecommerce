@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Star, ShoppingCart, ArrowLeft, Plus, Minus, Check } from 'lucide-react';
+import { HiStar, HiShoppingCart, HiArrowLeft, HiPlus, HiMinus, HiCheck } from "react-icons/hi2";
 import { useState } from 'react';
 import { use } from 'react';
 import { useCart } from '@/app/providers/CartProvider';
@@ -115,7 +115,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
           href={`/category/${product.category.toLowerCase()}`}
           className="inline-flex items-center text-sm text-gray-600 hover:text-primary transition-colors"
         >
-          <ArrowLeft className="w-4 h-4 mr-2" />
+          <HiArrowLeft className="w-4 h-4 mr-2" />
           Back to {product.category}
         </Link>
       </div>
@@ -144,7 +144,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex items-center gap-1">
                   {Array.from({ length: 5 }).map((_, i) => (
-                    <Star
+                    <HiStar
                       key={i}
                       className={`w-5 h-5 ${
                         i < Math.floor(product.rating)
@@ -183,7 +183,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                       disabled={quantity <= 1}
                       className="p-2 rounded-l-lg border border-r-0 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      <Minus className="w-4 h-4 text-text-secondary" />
+                      <HiMinus className="w-4 h-4 text-text-secondary" />
                     </button>
                     <div className="w-16 h-10 flex items-center justify-center border-t border-b">
                       {quantity}
@@ -193,7 +193,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                       disabled={quantity >= 10}
                       className="p-2 rounded-r-lg border border-l-0 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      <Plus className="w-4 h-4 text-text-secondary" />
+                      <HiPlus className="w-4 h-4 text-text-secondary" />
                     </button>
                   </div>
                 </div>
@@ -211,12 +211,12 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                 >
                   {isAdded ? (
                     <>
-                      <Check className="w-5 h-5" />
+                      <HiCheck className="w-5 h-5" />
                       Added to Cart!
                     </>
                   ) : (
                     <>
-                      <ShoppingCart className="w-5 h-5" />
+                      <HiShoppingCart className="w-5 h-5" />
                       {isAddingToCart ? 'Adding to Cart...' : `Add ${quantity} to Cart - $${(product.price * quantity).toFixed(2)}`}
                     </>
                   )}

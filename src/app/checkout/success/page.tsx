@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { CheckCircle } from 'lucide-react';
+import { HiCheckCircle } from 'react-icons/hi2';
 
 export default function CheckoutSuccessPage() {
   return (
@@ -9,7 +9,7 @@ export default function CheckoutSuccessPage() {
       <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="flex justify-center">
-            <CheckCircle className="h-16 w-16 text-green-500" />
+            <HiCheckCircle className="h-16 w-16 text-green-500" />
           </div>
           <h1 className="mt-4 text-3xl font-bold text-gray-900">
             Thank you for your purchase!

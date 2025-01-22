@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { ShoppingCart, Trash2, Plus, Minus } from 'lucide-react';
+import { HiShoppingCart, HiTrash, HiPlus, HiMinus } from 'react-icons/hi2';
 import { useCart } from '../providers/CartProvider';
 
 export default function CartPage() {
@@ -13,7 +13,7 @@ export default function CartPage() {
       <div className="min-h-screen bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <ShoppingCart className="mx-auto h-12 w-12 text-gray-400" />
+            <HiShoppingCart className="mx-auto h-12 w-12 text-gray-400" />
             <h2 className="mt-2 text-lg font-medium text-gray-900">Your cart is empty</h2>
             <p className="mt-1 text-sm text-gray-500">
               Start adding some amazing digital products to your cart!
@@ -69,7 +69,7 @@ export default function CartPage() {
                             onClick={() => removeItem(item.id)}
                             className="text-gray-400 hover:text-red-500 transition-colors"
                           >
-                            <Trash2 className="h-5 w-5" />
+                            <HiTrash className="h-5 w-5" />
                           </button>
                         </div>
                         <div className="mt-4 flex items-center justify-between">
@@ -78,14 +78,14 @@ export default function CartPage() {
                               onClick={() => updateQuantity(item.id, item.quantity - 1)}
                               className="p-1 rounded hover:bg-gray-100"
                             >
-                              <Minus className="h-4 w-4" />
+                              <HiMinus className="h-4 w-4" />
                             </button>
                             <span className="w-12 text-center">{item.quantity}</span>
                             <button
                               onClick={() => updateQuantity(item.id, item.quantity + 1)}
                               className="p-1 rounded hover:bg-gray-100"
                             >
-                              <Plus className="h-4 w-4" />
+                              <HiPlus className="h-4 w-4" />
                             </button>
                           </div>
                           <p className="text-lg font-medium text-gray-900">

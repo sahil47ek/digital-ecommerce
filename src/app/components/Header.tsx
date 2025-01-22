@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ShoppingCart } from 'lucide-react';
+import { HiShoppingCart } from 'react-icons/hi2';  // Already using correct icon import
 import { useCart } from '@/app/providers/CartProvider';
 import { usePathname } from 'next/navigation';
 import CartPreview from './CartPreview';

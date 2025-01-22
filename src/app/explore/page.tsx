@@ -2,7 +2,14 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Code, Palette, BookOpen, Camera, Music, ShoppingBag, Search } from 'lucide-react';
+import { 
+  HiCodeBracket,
+  HiBookOpen,
+  HiCamera,
+  HiMusicalNote,
+  HiShoppingBag,
+  HiMagnifyingGlass
+} from "react-icons/hi2";
 import { useState, useEffect } from 'react';
 
 type Product = {
@@ -157,42 +164,42 @@ const PRODUCTS_BY_CATEGORY: CategoryProducts = {
 
 const CATEGORIES = [
   {
-    icon: Code,
+    icon: HiCodeBracket,
     title: "Development",
     description: "Web, mobile, and software development resources",
     count: PRODUCTS_BY_CATEGORY.Development.length,
     color: "bg-blue-500"
   },
   {
-    icon: Palette,
+    icon: HiBookOpen,
     title: "Design",
     description: "UI kits, templates, and graphics",
     count: PRODUCTS_BY_CATEGORY.Design.length,
     color: "bg-purple-500"
   },
   {
-    icon: BookOpen,
+    icon: HiBookOpen,
     title: "Education",
     description: "Courses, tutorials, and learning materials",
     count: PRODUCTS_BY_CATEGORY.Education.length,
     color: "bg-green-500"
   },
   {
-    icon: Camera,
+    icon: HiCamera,
     title: "Photography",
     description: "Stock photos, presets, and effects",
     count: PRODUCTS_BY_CATEGORY.Photography.length,
     color: "bg-orange-500"
   },
   {
-    icon: Music,
+    icon: HiMusicalNote,
     title: "Audio",
     description: "Music, sound effects, and audio tools",
     count: PRODUCTS_BY_CATEGORY.Audio.length,
     color: "bg-red-500"
   },
   {
-    icon: ShoppingBag,
+    icon: HiShoppingBag,
     title: "E-commerce",
     description: "Templates, plugins, and solutions",
     count: PRODUCTS_BY_CATEGORY["E-commerce"].length,
@@ -260,7 +267,7 @@ export default function Explore() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full px-6 py-4 pl-12 rounded-lg text-gray-900 bg-white/95 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary-light"
               />
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <HiMagnifyingGlass className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
             </div>
           </div>
         </div>

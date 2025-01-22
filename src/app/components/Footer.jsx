@@ -1,4 +1,5 @@
-import { Facebook, Twitter, Instagram, Linkedin, Github, Mail } from 'lucide-react';
+// Code is already using correct react-icons imports - no changes needed
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import Link from 'next/link';
 
 const FOOTER_LINKS = {
@@ -23,11 +24,11 @@ const FOOTER_LINKS = {
 };
 
 const SOCIAL_LINKS = [
-  { name: 'Facebook', icon: Facebook, href: '#' },
-  { name: 'Twitter', icon: Twitter, href: '#' },
-  { name: 'Instagram', icon: Instagram, href: '#' },
-  { name: 'LinkedIn', icon: Linkedin, href: '#' },
-  { name: 'GitHub', icon: Github, href: '#' }
+  { name: 'Facebook', icon: FaFacebook, href: '#' },
+  { name: 'Twitter', icon: FaTwitter, href: '#' },
+  { name: 'Instagram', icon: FaInstagram, href: '#' },
+  { name: 'LinkedIn', icon: FaLinkedin, href: '#' },
+  { name: 'GitHub', icon: FaGithub, href: '#' }
 ];
 
 export default function Footer() {

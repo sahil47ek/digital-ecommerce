@@ -1,28 +1,28 @@
 import Image from 'next/image';
-import { Mail, Phone, MapPin, Clock, ArrowRight } from 'lucide-react';
+import { HiPhone, HiEnvelope, HiMapPin, HiClock, HiArrowRight } from 'react-icons/hi2';
 import Hero from '../components/Hero';
 
 const CONTACT_INFO = [
   {
-    icon: Phone,
+    icon: HiPhone,
     title: "Phone",
     details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
     color: "bg-blue-500"
   },
   {
-    icon: Mail,
+    icon: HiEnvelope,
     title: "Email",
     details: ["support@digitalmarket.com", "sales@digitalmarket.com"],
     color: "bg-purple-500"
   },
   {
-    icon: MapPin,
+    icon: HiMapPin,
     title: "Office",
     details: ["123 Digital Avenue", "San Francisco, CA 94105"],
     color: "bg-green-500"
   },
   {
-    icon: Clock,
+    icon: HiClock,
     title: "Hours",
     details: ["Monday - Friday: 9AM - 6PM", "Weekend: 10AM - 4PM"],
     color: "bg-orange-500"
@@ -138,7 +138,7 @@ export default function Contact() {
                   className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-light transition-colors flex items-center justify-center gap-2"
                 >
                   Send Message
-                  <ArrowRight className="w-5 h-5" />
+                  <HiArrowRight className="w-5 h-5" />
                 </button>
               </form>
             </div>
@@ -175,7 +175,7 @@ export default function Contact() {
                   className="inline-flex items-center gap-2 text-primary hover:text-primary-dark transition-colors"
                 >
                   Visit Documentation
-                  <ArrowRight className="w-5 h-5" />
+                  <HiArrowRight className="w-5 h-5" />
                 </a>
               </div>
             </div>

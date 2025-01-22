@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Users, Target, Zap, Shield } from 'lucide-react';
+import { HiUsers, HiCursorArrowRays, HiBolt, HiShieldCheck } from "react-icons/hi2";
 import Hero from '../components/Hero';
 
 const TEAM_MEMBERS = [
@@ -26,22 +26,22 @@ const TEAM_MEMBERS = [
 
 const VALUES = [
   {
-    icon: Target,
+    icon: HiCursorArrowRays,
     title: "Innovation",
     description: "Pushing boundaries in digital product development"
   },
   {
-    icon: Users,
+    icon: HiUsers,
     title: "Community",
     description: "Building strong relationships with our customers"
   },
   {
-    icon: Shield,
+    icon: HiShieldCheck,
     title: "Trust",
     description: "Maintaining highest standards of security and reliability"
   },
   {
-    icon: Zap,
+    icon: HiBolt,
     title: "Excellence",
     description: "Delivering exceptional quality in every product"
   }

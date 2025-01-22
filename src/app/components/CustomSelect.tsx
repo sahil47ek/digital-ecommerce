@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown } from 'lucide-react';
+import React, { useState, useRef, useEffect, Fragment } from 'react';
+import { HiChevronDown } from 'react-icons/hi2';  // Already using correct icon import
+// import { Listbox, Transition } from '@headlessui/react';
 
 interface Option {
   value: string;
@@ -49,7 +50,7 @@ export default function CustomSelect({
         <span className="truncate">
           {selectedOption ? selectedOption.label : placeholder}
         </span>
-        <ChevronDown 
+        <HiChevronDown 
           className={`w-5 h-5 text-gray-400 transition-transform duration-200 ${
             isOpen ? 'transform rotate-180' : ''
           }`}

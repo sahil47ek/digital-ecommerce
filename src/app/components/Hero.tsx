@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { HiArrowRight } from 'react-icons/hi2';
 
 interface HeroProps {
   title: string;
@@ -78,7 +78,7 @@ export default function Hero({
                   className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
                 >
                   {primaryAction.label}
-                  <ArrowRight className="w-5 h-5" />
+                  <HiArrowRight className="w-5 h-5" />
                 </Link>
               )}
               {secondaryAction && (

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { CreditCard, ArrowLeft } from 'lucide-react';
+import { HiCreditCard, HiArrowLeft } from 'react-icons/hi2';
 import { useCart } from '../providers/CartProvider';
 
 type FormData = {
@@ -94,7 +94,7 @@ export default function CheckoutPage() {
           href="/cart"
           className="inline-flex items-center text-sm text-gray-600 hover:text-primary transition-colors mb-8"
         >
-          <ArrowLeft className="w-4 h-4 mr-2" />
+          <HiArrowLeft className="w-4 h-4 mr-2" />
           Back to Cart
         </Link>
 
@@ -233,7 +233,7 @@ export default function CheckoutPage() {
                         onChange={handleInputChange}
                         className="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm pr-10"
                       />
-                      <CreditCard className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                      <HiCreditCard className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-6">
